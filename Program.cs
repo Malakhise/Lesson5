@@ -1,64 +1,4 @@
-﻿
-// Задача 3:Задайте прямоугольный двумерный массив. 
-//Напишите программу, которая будет находить строку с наименьшей суммой элементов.
-
-// using System.Numerics;
-
-// void InputMatrix(int[,] matrix)
-// {
-//     for (int i = 0; i < matrix.GetLength(0); i++)
-//         for (int j = 0; j < matrix.GetLength(1); j++)
-//             matrix[i, j] = new Random().Next(0, 10);
-// }
-
-// void PrintMatrix(int[,] matrix)
-// {
-//     for (int i = 0; i < matrix.GetLength(0); i++)
-//     {
-//         for (int j = 0; j < matrix.GetLength(1); j++)
-//             Console.Write(matrix[i, j] + "\t");
-//         Console.WriteLine();
-//     }
-// }
-
-// void SumMatrix(int[,] matrix)
-// {
-//     int[] sum = new int[matrix.GetLength(0)];
-//   int summa;
-//     for (int i = 0; i < matrix.GetLength(0); i++)
-//   {
-//         summa = 0;
-//         for (int j = 0; j < matrix.GetLength(1); j++)
-//             summa += matrix[i,j]; 
-// Console.Write($"{summa} ");
-//   } 
-   
-//    // Console.WriteLine(summa);
-// }
-
-// void RelisMatrix(int[,] matrix)
-// {
-//     int max;
-//    for (int i = 0; i < matrix.Length; i++)
-//        int max = matrix[0]; 
-//       {
-//         if (matrix[i] > max);
-//         max = matrix[i];
-//       }
-// Console.Write($"{max} ");
-// }
-
-// Console.Clear();
-// Console.Write("Введите размер матрицы: ");
-// int[] size = Console.ReadLine().Split(" ").Select(x => int.Parse(x)).ToArray(); // [2, 5]
-// int[,] matrix = new int[size[0], size[1]];
-// InputMatrix(matrix);
-// PrintMatrix(matrix);
-// Console.WriteLine();
-// SumMatrix(matrix);
-// RelisMatrix(matrix);
-//---------------------------------------------------------------------------------------
-// Урок 5
+﻿// Урок 5
 // Задача 3; Задайте прямоугольный двумерный массив. Напишите программу, которая будет находить строку с наименьшей суммой элементов.
 // void CreateArray(int[,] array)
 // {
@@ -121,56 +61,52 @@
 // }
 // ----------------------------------------------------------------------------------------------------------------
 // Задача 2: Задайте двумерный массив. Напишите программу, которая поменяет местами первую и последнюю строку массива.
-Console.Clear();
-Console.Write("Введите размер матрицы: ");
-int[] size = Console.ReadLine().Split(" ").Select(x => int.Parse(x)).ToArray(); // [2, 5]
-int[,] matrix = new int[size[0], size[1]];
+// Console.Clear();
+// Console.Write("Введите размер матрицы: ");
+// int[] size = Console.ReadLine().Split(" ").Select(x => int.Parse(x)).ToArray(); // [2, 5]
+// int[,] matrix = new int[size[0], size[1]];
 
-void InputMatrix(int[,] matrix)
-{
-    for (int i = 0; i < matrix.GetLength(0); i++)
-        for (int j = 0; j < matrix.GetLength(1); j++)
-            matrix[i, j] = new Random().Next(0, 10);
-}
-void PrintMatrix(int[,] matrix)
-{
-    for (int i = 0; i < matrix.GetLength(0); i++)
-    {
-        for (int j = 0; j < matrix.GetLength(1); j++)
-            Console.Write(matrix[i, j] + "\t");
-        Console.WriteLine();
-    }
-}
+// void InputMatrix(int[,] matrix)
+// {
+//     for (int i = 0; i < matrix.GetLength(0); i++)
+//         for (int j = 0; j < matrix.GetLength(1); j++)
+//             matrix[i, j] = new Random().Next(0, 10);
+// }
+// void PrintMatrix(int[,] matrix)
+// {
+//     for (int i = 0; i < matrix.GetLength(0); i++)
+//     {
+//         for (int j = 0; j < matrix.GetLength(1); j++)
+//             Console.Write(matrix[i, j] + "\t");
+//         Console.WriteLine();
+//     }
+// }
 
-InputMatrix(matrix);
-PrintMatrix(matrix);
+// InputMatrix(matrix);
+// PrintMatrix(matrix);
 
-   for (int i = 0; i < matrix.GetLength(1); i++)
-            {
-                var tmp = matrix[matrix.GetLength(1) - 1, i];
-                matrix[matrix.GetLength(1) - 1, i] = matrix[0, i];
-                martix[0, i] = tmp;
-            }
+//    for (int i = 0; i < matrix.GetLength(1); i++)
+//             {
+//                 var tmp = matrix[matrix.GetLength(1) - 1, i];
+//                 matrix[matrix.GetLength(1) - 1, i] = matrix[0, i];
+//                 matrix[0, i] = tmp;
+//             }
  
-            Console.WriteLine("\nИзмененный массив: ");
-            for (int i = 0; i < matrix.GetLength(0); i++)
-            {
-                for (int j = 0; j < matrix.GetLength(1); j++)
-                {
-                    Console.Write(matrix[i, j] + " ");
-                }
-                Console.WriteLine();
-            }
+//             Console.WriteLine("\nИзмененный массив: ");
+//             for (int i = 0; i < matrix.GetLength(0); i++)
+//             {
+//                 for (int j = 0; j < matrix.GetLength(1); j++)
+//                 {
+//                     Console.Write(matrix[i, j] + " ");
+//                 }
+//                 Console.WriteLine();
+//             }
  
-            Console.ReadKey();
+//             Console.ReadKey();
+//----------------------------------------------------------------------------------------------------------
+// Задача 1. Напишите программу, которая на вход принимает позиции элемента в двумерном массиве, и возвращает значение этого элемента или же указание, что такого элемента нет.
 
-//    ﻿// Задача 1. Напишите программу, которая на вход принимает позиции элемента в двумерном массиве, и возвращает значение этого элемента или же указание, что такого элемента нет.
-// // Например, задан массив:
-// // 1 4 7 2
-// // 5 9 2 3
-// // 8 4 2 4
-// // 17 -> такого числа в массиве нет
-
+// 
 // Console.Write("Введите количество строк массива: ");
 // int m = Convert.ToInt32(Console.ReadLine());
 // Console.Write("Введите количество столбцов массива: ");
